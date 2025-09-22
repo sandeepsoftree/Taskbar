@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Taskbar Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Taskbar container -->
+  <header class="taskbar-container">
+    <div class="taskbar" id="taskbar">
+      <div class="logo">MySite</div>
+      <nav class="nav-links" id="navLinks"></nav>
+    </div>
+  </header>
+
+  <!-- Add Taskbar Item Section -->
+  <section class="add-taskbar">
+    <h2>Add Taskbar Item</h2>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Enter Task Name" required>
+      <button type="submit">Add Task</button>
+    </form>
+  </section>
+
+  <!-- Content -->
+  <main>
+    <section class="content">
+      <h1>Welcome!</h1>
+      <p>Use the form above to add items to the taskbar dynamically.</p>
+      <div id="output"></div>
+    </section>
+  </main>
+
+  <script src="taskbar.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
